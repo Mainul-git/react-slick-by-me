@@ -9,7 +9,7 @@ const images = [
   { src: "https://i.ibb.co/R9Ns7HS/mainul03.png"},
   { src: "https://i.ibb.co/Sd0q6Fq/mainul04.png"},
   { src: "https://i.ibb.co/k8zS9YM/mainul05.png" },
-  { src: "https://i.ibb.co/gdbpbST/mainul06.png"}, { src: "https://i.ibb.co/gdbpbST/mainul06.png"},
+  { src: "https://i.ibb.co/gdbpbST/mainul06.png"}
 ];
 
 
