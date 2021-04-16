@@ -9,7 +9,7 @@ const images = [
   { src: "https://i.ibb.co/R9Ns7HS/mainul03.png"},
   { src: "https://i.ibb.co/Sd0q6Fq/mainul04.png"},
   { src: "https://i.ibb.co/k8zS9YM/mainul05.png" },
-  { src: "https://i.ibb.co/gdbpbST/mainul06.png"}
+  { src: "https://i.ibb.co/gdbpbST/mainul06.png"}, { src: "https://i.ibb.co/gdbpbST/mainul06.png"},
 ];
 
 
@@ -26,9 +26,13 @@ function App() {
     slidesToScroll: 1,
     focusOnSelect:true, 
     customPaging: function (i) {
+      
       return (
         <a>
-          <img src={images[i].src} className="w-100 h-100" style={{height:'100%'}} />
+        {<img src={images[i].src}  className="w-100 h-100" style={{height:'100%'}} />}  
+     
+         
+  
         </a>
       );
     },
@@ -38,8 +42,10 @@ function App() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 1,
+          focusOnSelect:true,
           slidesToScroll:1,
           infinite: true,
+          dotsClassName:'slick-dots slick-thumb',
           dots: true
         }
       },
@@ -47,6 +53,7 @@ function App() {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
+          focusOnSelect:true,
           slidesToScroll: 1,
           initialSlide: 1
         }
@@ -55,6 +62,7 @@ function App() {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
+          focusOnSelect:true,
           slidesToScroll: 1
         }
       }
@@ -69,23 +77,23 @@ function App() {
   
   <div className="">
         <h2> Single Item</h2>
-        <Slider {...settings}>
-          <div>
+        <Slider {...settings} >
+          <div className="w-auto h-auto" >
           <img className="h-100 w-100" src="https://i.ibb.co/fHRRPCv/mainul01.png" />
           </div>
-          <div>
+          <div className="w-auto h-auto">
           <img className="h-100 w-100" src="https://i.ibb.co/MVzyt6t/mainul02.png" />
           </div>
-          <div>
+          <div className="w-auto h-auto">
           <img className="h-100 w-100" src="https://i.ibb.co/R9Ns7HS/mainul03.png" />
           </div>
-          <div>
+          <div className="w-auto h-auto">
           <img className="h-100 w-100" src="https://i.ibb.co/Sd0q6Fq/mainul04.png" />
           </div>
-          <div>
+          <div className="w-auto h-auto">
           <img className="h-100 w-100" src="https://i.ibb.co/k8zS9YM/mainul05.png" />
           </div>
-          <div>
+          <div className="w-auto h-auto">
           <img className="h-100 w-100" src="https://i.ibb.co/gdbpbST/mainul06.png" />
           </div>
         </Slider>
