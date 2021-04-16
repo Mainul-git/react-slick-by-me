@@ -28,7 +28,7 @@ function App() {
     customPaging: function (i) {
       return (
         <a>
-          <img src={images[i].src} className="w-100 " style={{height:'40px'}} />
+          <img src={images[i].src} className="w-100 h-100" style={{height:'100%'}} />
         </a>
       );
     },
@@ -64,9 +64,10 @@ function App() {
   };
   return (
   <>
+  <div className="bg-secondary " style={{height:'100vh'}}>
   <h1>Slider</h1>
   
-  <div className="bg-secondary">
+  <div className="">
         <h2> Single Item</h2>
         <Slider {...settings}>
           <div>
@@ -88,6 +89,7 @@ function App() {
           <img className="h-100 w-100" src="https://i.ibb.co/gdbpbST/mainul06.png" />
           </div>
         </Slider>
+      </div>
       </div>
     </>
   );
