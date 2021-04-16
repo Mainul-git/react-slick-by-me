@@ -18,7 +18,7 @@ function App() {
   const settings = {
     dots: true,
     dotsClassName:'slick-dots slick-thumb',
-    className:'w-25 m-auto',
+    className:' m-auto w-75',
     infinite: true,
     arrows:true,
     speed: 500,
@@ -28,8 +28,8 @@ function App() {
     customPaging: function (i) {
       
       return (
-        <a>
-        {<img src={images[i].src}  className="w-100 h-100" style={{height:'100%'}} />}  
+        <a className="">
+        {<img src={images[i].src} style={{height:'30px',width:'100px'}} className="w-100  bg-secondary" />}  
      
          
   
@@ -72,29 +72,29 @@ function App() {
   };
   return (
   <>
-  <div className="bg-secondary " style={{height:'100vh'}}>
+  <div className="bg-secondary full-screen"  >
   <h1>Slider</h1>
   
   <div className="">
         <h2> Single Item</h2>
         <Slider {...settings} >
-          <div className="w-auto h-auto" >
-          <img className="h-100 w-100" src="https://i.ibb.co/fHRRPCv/mainul01.png" />
+          <div className="w-100" >
+          <img className=" w-100"style={{height:'400px'}} src="https://i.ibb.co/fHRRPCv/mainul01.png" />
           </div>
-          <div className="w-auto h-auto">
-          <img className="h-100 w-100" src="https://i.ibb.co/MVzyt6t/mainul02.png" />
+          <div className="w-100">
+          <img className=" w-100"style={{height:'400px'}} src="https://i.ibb.co/MVzyt6t/mainul02.png" />
           </div>
-          <div className="w-auto h-auto">
-          <img className="h-100 w-100" src="https://i.ibb.co/R9Ns7HS/mainul03.png" />
+          <div className="w-100">
+          <img className=" w-100"style={{height:'400px'}} src="https://i.ibb.co/R9Ns7HS/mainul03.png" />
           </div>
-          <div className="w-auto h-auto">
-          <img className="h-100 w-100" src="https://i.ibb.co/Sd0q6Fq/mainul04.png" />
+          <div className="w-100 ">
+          <img className=" w-100"style={{height:'400px'}} src="https://i.ibb.co/Sd0q6Fq/mainul04.png" />
           </div>
-          <div className="w-auto h-auto">
-          <img className="h-100 w-100" src="https://i.ibb.co/k8zS9YM/mainul05.png" />
+          <div className="w-100">
+          <img className=" w-100" style={{height:'400px'}} src="https://i.ibb.co/k8zS9YM/mainul05.png" />
           </div>
-          <div className="w-auto h-auto">
-          <img className="h-100 w-100" src="https://i.ibb.co/gdbpbST/mainul06.png" />
+          <div className="w-100 ">
+          <img className="w-100" style={{height:'400px'}} src="https://i.ibb.co/gdbpbST/mainul06.png" />
           </div>
         </Slider>
       </div>
